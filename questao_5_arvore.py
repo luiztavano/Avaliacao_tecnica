@@ -1,3 +1,21 @@
+#Processo de desenvolvimento de uma árvore
+
+#As árvores em python são um estrutura de dados formadas por um conjunto de
+#elementos chamados de nós. Sendo esses nós conectados com outros de forma
+#hierárquica.
+#Assim um nó que está no nível zero é tido como a raiz da árvore e está no
+#topo da hierarquica.
+
+#Diante disso, o processo de construção de uma árvore binária onde cada nó só
+#possui dois filhos pode ser respresentada da seguinte forma:
+
+#Conhecendo o valor do nó zero (raiz da árvore), todos os novos nós que serão
+#adicionados posteriormente, se forem maior que o valor do nó zero, ficarão
+#para o lado direito da árvore, se forme menor, ficarão para o lado esquerdo.
+
+#Essa processo se repete nos nós dos próximos níveis.
+#Assim o processo de construção da árvore é realizado.
+
 class BSTNode(object):
     def __init__(self, key, left=None, right=None):
         self.key = key
